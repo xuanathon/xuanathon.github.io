@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Oswald:400,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700|Oswald:300,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/master.css">
 	<title>Xuan Huang - UX Design & Research </title>
@@ -19,24 +19,32 @@
 		<a href="index.html" class="nav-logo">
 			<img src="./img/itsa-me.png" alt="Logo Image" class="logo">
 		</a>
-		<nav>
-			<a href="index.html">Work</a>
-			<a href="fun.html">Play</a>
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-		</nav>
+
+		<div id="nav-overlay">
+			<nav>
+				<a href="/" class="current">Work</a>
+				<!-- <a href="fun.html">Play</a> -->
+				<a href="about.html">About</a>
+				<a href="resume.html">Resume</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
 		<div class="toggle-menu">
-			<div class="icon hamburger"></div>
+			<div class="icon burger" id="burger"></div>
 		</div>
 	</div>
 
 	<main id="main">
 		<section class="intro">
-			<h1>[Hello World!]</h1>
-			<p>I'm Xuan, a UX student at the University of Michigan.</p>
+			<h1 class="oswald">[Hello World!]</h1>
+
 			<img src="" alt="">
+
 			<p>[insert picture here]</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<p>I'm Xuan, a student of UX Design at the University of Michigan.</p>
+			<p>My mission is to spend my career making technology more accessible while exploring the possibilities in which it can empower and enrich our lives.</p>
 		</section>
 
 		<section class="work-gallery">
