@@ -43,7 +43,8 @@ EXTRAS
     -webkit-font-smoothing: antialiased;
 }
 
-a, a:visited {
+a,
+a:visited {
     /* text-decoration: none; */
 }
 
@@ -174,7 +175,8 @@ main {
     padding-top: 60px;
 }
 
-header, section {
+header,
+section {
     color: #595959;
     font-size: 14px;
     line-height: 1.5;
@@ -214,13 +216,17 @@ h2 {
     color: #737373;
 }
 
-section .subheading {
+.work-subheading {
     text-transform: uppercase;
     color: #b3b3b3;
 }
 
 .project {
     margin: 20px auto 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .project-title {
@@ -337,6 +343,37 @@ MEDIA QUERIES
     .quote p {
         line-height: 1.5;
     }
+
+    .work-heading,
+    .work-subheading {
+        text-align: center;
+    }
+
+    .project {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+
+    .project-img {
+        flex: 1 40%;
+    }
+
+    .project-desc {
+        flex: 1 60%;
+        margin-left: 60px;
+    }
+
+    .project:nth-child(2n+1) .project-desc {
+        order: 1;
+        margin-left: 0;
+        margin-right: 60px;
+    }
+
+    .project:nth-child(2n+1) .project-img {
+        order: 2;
+    }
 }
 
 
@@ -345,7 +382,7 @@ MEDIA QUERIES
 @media all and (min-width: 1200px) {
     .navbar {
         right: auto;
-        width: 150px;
+        width: 15%;
         height: 100vh;
         flex-direction: column;
         justify-content: flex-start;
@@ -366,8 +403,12 @@ MEDIA QUERIES
 
     main {
         padding-top: 0;
-        padding-left: 150px;
+        padding-left: 15%;
         /* padding: 100px 200px 100px 350px; */
+    }
+
+    section {
+        padding: 50px 100px;
     }
 }
 
