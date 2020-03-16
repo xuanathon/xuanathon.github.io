@@ -190,13 +190,59 @@ footer {
     .toggle-menu {
         display: none;
     }
+
+    #nav-overlay {
+        display: inline-block;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0 30px;
+    }
+
+    nav a, nav a:last-child {
+        border: none;
+    }
+
 }
 
 
 
 /* desktop */
 @media all and (min-width: 1200px) {
+    .navbar {
+        right: auto;
+        width: 150px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+        background-image: linear-gradient(90deg, #f2f2f2, #fff);
+        box-shadow: 2px 0 2px -1px #dcdcdc;
+        /* box-shadow: 0 1px 2px 0 #dcdcdc; */
+    }
 
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 30px 10px;
+    }
+
+    main {
+        padding-top: 0;
+        padding-left: 150px;
+        /* padding: 100px 200px 100px 350px; */
+    }
 }
 
 
