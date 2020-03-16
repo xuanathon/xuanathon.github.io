@@ -63,6 +63,10 @@ body {
     text-transform: uppercase;
 }
 
+.align-right {
+    text-align: right;
+}
+
 #skip-to-main a {
     background: #fff;
     position: absolute;
@@ -222,7 +226,9 @@ section {
 
 .subheading {
     text-transform: uppercase;
-    color: #b3b3b3;
+    font-weight: 700;
+    /* color: #b3b3b3; */
+    color: #595959;
     margin: 0;
 }
 
@@ -262,17 +268,25 @@ section {
     margin-bottom: 0;
 }
 
-.about-gallery {
+.about-me {
+    padding-top: 10px;
+}
+
+.biography p:not(:first-child) {
+    margin: 15px auto;
+}
+
+.grid-gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 5px;
     justify-items: center;
-    padding-top: 10px;
+    padding: 20px 0;
 }
 
-.about-gallery .grid-tile {
+.grid-gallery .grid-tile {
     object-fit: cover;
     overflow: hidden;
     position: relative;
@@ -280,25 +294,27 @@ section {
     transition: all 250ms ease-out;
 }
 
-.about-gallery .grid-tile:hover .grid-caption {
+.grid-gallery .grid-tile:hover .grid-caption {
     opacity: 1;
 }
 
-.about-gallery .grid-tile:hover img {
+.grid-gallery .grid-tile:hover img {
     /* Blur effect obtained from
     http://www.codeblocq.com/2016/05/Blur-Image-on-Hover-with-CSS/ */
     -webkit-filter: blur(2px);
     filter: blur(2px);
 }
 
-.about-gallery .grid-caption {
+.grid-gallery .grid-caption {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .4);
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, .5), rgba(10, 10, 10, .5));
     color: #fff;
+    font-size: 12px;
     padding: 20px;
     /* Overlay effect obtained from
     https://www.w3schools.com/howto/howto_css_image_overlay.asp */
@@ -307,51 +323,55 @@ section {
     transition: all 250ms ease-out;
 }
 
-.about-gallery figure img {
+.grid-caption p {
+    margin: 5px auto;
+}
+
+.grid-gallery figure img {
     max-height: none;
 }
 
-.about-gallery .grid-1 {
+.grid-gallery .grid-1 {
     grid-column: 1/-1;
     grid-row: 1/2;
 }
 
-.about-gallery .grid-2 {
+.grid-gallery .grid-2 {
     grid-column: 1/4;
     grid-row: 2/3;
 }
 
-.about-gallery .grid-3 {
+.grid-gallery .grid-3 {
     grid-column: 4/-1;
     grid-row: 2/3;
 }
 
-.about-gallery .grid-4 {
+.grid-gallery .grid-4 {
     grid-column: 1/4;
     grid-row: 3/4;
 }
 
-.about-gallery .grid-5 {
+.grid-gallery .grid-5 {
     grid-column: 4/-1;
     grid-row: 3/4;
 }
 
-.about-gallery .grid-6 {
+.grid-gallery .grid-6 {
     grid-column: 1/-1;
     grid-row: 4/5;
 }
 
-.about-gallery .grid-7 {
+.grid-gallery .grid-7 {
     grid-column: 1/4;
     grid-row: 5/7;
 }
 
-.about-gallery .grid-8 {
+.grid-gallery .grid-8 {
     grid-column: 4/-1;
     grid-row: 5/6;
 }
 
-.about-gallery .grid-9 {
+.grid-gallery .grid-9 {
     grid-column: 4/-1;
     grid-row: 6/7;
 }
@@ -492,47 +512,47 @@ MEDIA QUERIES
         order: 2;
     }
 
-    .about-gallery .grid-1 {
+    .grid-gallery .grid-1 {
         grid-column: 1/5;
         grid-row: 1/2;
     }
 
-    .about-gallery .grid-2 {
+    .grid-gallery .grid-2 {
         grid-column: 5/-1;
         grid-row: 1/2;
     }
 
-    .about-gallery .grid-3 {
+    .grid-gallery .grid-3 {
         grid-column: 1/3;
         grid-row: 2/3;
     }
 
-    .about-gallery .grid-4 {
+    .grid-gallery .grid-4 {
         grid-column: 3/5;
         grid-row: 2/3;
     }
 
-    .about-gallery .grid-5 {
+    .grid-gallery .grid-5 {
         grid-column: 5/-1;
         grid-row: 2/3;
     }
 
-    .about-gallery .grid-6 {
+    .grid-gallery .grid-6 {
         grid-column: 1/5;
         grid-row: 3/4;
     }
 
-    .about-gallery .grid-7 {
+    .grid-gallery .grid-7 {
         grid-column: 5/-1;
         grid-row: 3/5;
     }
 
-    .about-gallery .grid-8 {
+    .grid-gallery .grid-8 {
         grid-column: 1/3;
         grid-row: 4/5;
     }
 
-    .about-gallery .grid-9 {
+    .grid-gallery .grid-9 {
         grid-column: 3/5;
         grid-row: 4/5;
     }
@@ -571,6 +591,19 @@ MEDIA QUERIES
 
     section {
         padding: 50px 100px;
+    }
+
+    .biography {
+        display: inline-block;
+        width: 35%;
+        margin-right: 40px;
+    }
+
+    .grid-gallery {
+        display: inline-grid;
+        width: 50%;
+        vertical-align: top;
+        padding: 0;
     }
 
     footer {
