@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+/* .icon:hover {
+    cursor: pointer;
+} */
+
 .icon::before {
   display: inline-block;
   font-style: normal;
@@ -21,6 +25,11 @@ a, a:visited {
 
 body {
     font-family: 'Karla', sans-serif;
+    color: #1a1a1a;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
 }
 
 #skip-to-main a {
@@ -64,15 +73,53 @@ body {
     box-shadow: 0 1px 2px 0 #dcdcdc;
 }
 
+#nav-overlay {
+    display: none;
+    z-index: 998;
+    position: absolute;
+    overflow: hidden;
+    background-color: #fff;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 1px 2px 0 #dcdcdc;
+}
+
+#nav-overlay.open {
+    display: block;
+}
+
 nav {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 nav a {
+    display: block;
     text-decoration: none;
+    padding: 25px 0;
+    color: #808080;
+    font-weight: 300;
+    border-top: 1px solid #f2f2f2;
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+
+nav a:hover {
+    color: #1a1a1a;
+}
+
+nav a.current {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+nav a:last-child {
+    border-bottom: 1px solid #f2f2f2;
 }
 
 .toggle-menu {
@@ -82,7 +129,7 @@ nav a {
     padding: 22px;
 }
 
-.hamburger {
+.burger {
     font-family: "web-icons";
     font-size: 16px;
     font-weight: 400;
@@ -90,7 +137,7 @@ nav a {
     -webkit-font-smoothing: antialiased;
 }
 
-.hamburger::before {
+.burger::before {
     content: "\f0c9";
 }
 
