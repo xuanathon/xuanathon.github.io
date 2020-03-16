@@ -410,6 +410,10 @@ MEDIA QUERIES
     section {
         padding: 50px 100px;
     }
+
+    footer {
+        padding-left: 15%;
+    }
 }
 
 
