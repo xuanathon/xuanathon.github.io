@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	burger.onclick = function() {
 		navMenu.classList.toggle('open');
 	}
+
+
+	document.getElementById('current-year').innerText = new Date().getFullYear();
 });
 
 
