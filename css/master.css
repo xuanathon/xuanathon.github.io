@@ -139,7 +139,8 @@ nav a {
     transition: all 250ms ease-out;
 }
 
-nav a:hover:not(.current) {
+nav a:hover:not(.current),
+nav a:focus:not(.current) {
     color: #1a1a1a;
     text-decoration: underline;
 }
@@ -211,14 +212,15 @@ section {
     padding: 40px 20px;
 }
 
-.work-heading {
+.heading {
     font-size: 25px;
     color: #737373;
 }
 
-.work-subheading {
+.subheading {
     text-transform: uppercase;
     color: #b3b3b3;
+    margin: 0;
 }
 
 .project {
@@ -300,7 +302,8 @@ footer {
     transition: background-color 250ms ease-out;
 }
 
-.social-container .icon:hover {
+.social-container .icon:hover,
+.social-container .icon:focus {
     background-color: #6ecbbd;
     border-color: #6ecbbd;
 }
@@ -348,16 +351,16 @@ MEDIA QUERIES
         line-height: 1.5;
     }
 
-    .work-heading,
-    .work-subheading {
+    .heading,
+    .subheading {
         text-align: center;
     }
 
-    .work-heading {
+    .heading {
         font-size: 30px;
     }
 
-    .work-subheading {
+    .subheading {
         font-size: 16px;
     }
 
