@@ -368,6 +368,10 @@ MEDIA QUERIES
         margin-top: 40px;
     }
 
+    .project-title {
+        padding-top: 0;
+    }
+
     .project-img {
         flex: 1 40%;
     }
