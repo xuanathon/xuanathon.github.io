@@ -1,14 +1,16 @@
-// document.addEventListener("DOMContentLoaded", function(){
-// 	// console.log('finished loading');
-// });
+document.addEventListener('DOMContentLoaded', function(){
+	// console.log('finished loading');
+
+	var burger = document.getElementById('burger'),
+		navMenu = document.getElementById('nav-overlay');
+
+	burger.onclick = function() {
+		navMenu.classList.toggle('open');
+	}
+});
 
 
-var burger = document.getElementById('burger'),
-	navMenu = document.getElementById('nav-overlay');
 
-burger.onclick = function() {
-	navMenu.classList.toggle('open');
-}
 
 // burger.addEventListener('click', function(){
 // 	// console.log('clicked burger');
