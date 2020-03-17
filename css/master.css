@@ -175,10 +175,6 @@ nav a:last-child {
     -webkit-font-smoothing: antialiased;
 }
 
-.burger::before {
-    content: "\f0c9";
-}
-
 main {
     padding-top: 60px;
 }
@@ -596,7 +592,7 @@ MEDIA QUERIES
     .biography {
         display: inline-block;
         width: 35%;
-        margin-right: 40px;
+        margin-right: 60px;
     }
 
     .grid-gallery {
