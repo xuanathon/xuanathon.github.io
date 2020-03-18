@@ -1039,10 +1039,11 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
 
     .logo {
         width: 80px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     nav {
+        font-size: 1.1em;
         text-align: center;
     }
 
