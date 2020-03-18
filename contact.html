@@ -35,7 +35,7 @@
 				<a href="index.html">Work</a>
 				<a href="about.html">About</a>
 				<a href="resume.html">Resume</a>
-				<a href="contact.html"class="current">Contact Me</a>
+				<a href="contact.html"class="current">Contact</a>
 			</nav>
 		</div>
 
@@ -48,23 +48,38 @@
 		<header class="page-title">
 			<h1 class="heading oswald">Contact Me</h1>
 			<p class="subheading">What's on your mind?</p>
-			<img src="" alt="">
-			<p>[insert picture here]</p><br>
-			<p>Questions? Comments? Want to hire me?</p>
+			<figure class="heading-img">
+				<img src="./img/itsa-me.png" alt="cartoon drawing of me">
+			</figure>
 		</header>
 
-		<form action="https://formspree.io/xyypwogp" method="POST">
-			<label>
-				Your email:
-				<input type="text" name="_replyto">
-			</label>
+		<section>
+			<div class="contact-blurb">
+				<p>Questions? Comments? Want to hire me?</p>
+				<p>If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+				<p>Use the contact form <span class="mobile">below</span><span class="desktop">to the right</span>. Let's chat!</p>
+			</div>
 
-			<label>
-				Your message:
-				<textarea name="message"></textarea>
-			</label>
-			<button type="submit">Send</button>
-		</form>
+			<form action="https://formspree.io/xyypwogp" method="POST">
+				<fieldset>
+					<label for="contact-name">Your Name:</label>
+					<input type="text" name="contact-name" id="contact-name" class="input">
+
+					<label for="contact-email">Email:</label>
+					<input type="email" name="contact-email" id="contact-email" class="input">
+
+					<label for="contact-subject">Subject:</label>
+					<input type="text" name="contact-subject" id="contact-subject" class="input" >
+
+					<label for="contact-textarea">Your Message:</label>
+					<textarea name="message" maxlength="4000" id="contact-textarea" class="textarea" class="input"></textarea>
+
+					<input type="submit" name="submit-form" value="&#8250; Submit" class="button submit">
+
+					<!-- <input type="hidden" name="_next" value="https://xuanathon.github.io/"> -->
+				</fieldset>
+			</form>
+		</section>
 	</main>
 
 	<footer>
