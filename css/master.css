@@ -619,6 +619,10 @@ MEDIA QUERIES
         border-color: transparent;
     }
 
+    .intro {
+        font-size: 18px;
+    }
+
     .quote p {
         line-height: 1.5;
     }
@@ -788,6 +792,10 @@ MEDIA QUERIES
         padding-top: 0;
         padding-left: 15%;
         /* padding: 100px 200px 100px 350px; */
+    }
+
+    .intro {
+        font-size: 22px;
     }
 
     header,
