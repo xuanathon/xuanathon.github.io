@@ -59,7 +59,6 @@ a.text-link:visited {
     font-weight: 600;
     /* color: #786fdc; */
     color: #655bd7;
-    /* color: #4A3ED0; */
 }
 
 a.text-link:hover,
@@ -856,8 +855,14 @@ MEDIA QUERIES
     a,
     a:visited,
     #skip-to-main a,
+    nav a,
+    .grid-gallery .grid-tile,
+    .grid-gallery .grid-caption,
+    form .input,
+    form textarea,
     form .submit,
-    #download-resume {
+    #download-resume,
+    .social-container .icon {
         -webkit-transition: none;
         transition: none;
     }
