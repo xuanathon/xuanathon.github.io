@@ -451,6 +451,7 @@ header p {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 200px;
+    padding: 20px;
 }
 
 .about-header {
@@ -460,7 +461,7 @@ header p {
 
 .resume-header {
     background-image: linear-gradient(-180deg, rgba(102, 102, 153, .25), rgba(0, 0, 0, .25)), url("../img/header_resume.jpg");
-    background-position: bottom right;
+    background-position: center;
 }
 
 .contact-header {
@@ -468,13 +469,12 @@ header p {
     background-position: top left;
 }
 
-.contact-page .title-overlay {
-    text-align: right;
-}
-
 .title-overlay {
     font-size: 1.25em;
     color: #1a1a1a;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
 }
 
 .biography,
