@@ -395,6 +395,36 @@ header p {
     grid-row: 6/7;
 }
 
+article.resume section {
+    padding: 20px;
+}
+
+.resume .grey-block {
+    background-color: #f2f2f2;
+}
+
+.resume .content-block {
+    margin: 10px 0 20px;
+}
+
+.resume .content-block:last-child {
+    margin-bottom: 0;
+}
+
+.resume-section > h2 {
+    color: #1a1a1a;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.resume ul {
+    padding-left: 20px;
+}
+
+.resume ul > li {
+    margin: 5px 0;
+}
+
 form {
     padding: 20px;
     border: 1px solid #b3b3b3;
