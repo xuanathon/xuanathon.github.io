@@ -129,7 +129,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0 10px 10px;
-    background-image: linear-gradient(180deg, #e6e6e6, #f2f2f2);
+    background-color: #fff;
+    /* background-image: linear-gradient(180deg, #e6e6e6, #f2f2f2); */
     box-shadow: 0 1px 2px 0 #ccc;
     z-index: 998;
 }
@@ -207,7 +208,7 @@ main {
     padding-top: 60px;
 }
 
-header,
+div.intro,
 section {
     padding: 40px 20px;
     color: #595959;
@@ -215,7 +216,7 @@ section {
     line-height: 1.5;
 }
 
-header.intro {
+div.intro {
     background-color: #f2f2f2;
     display: flex;
     flex-flow: row wrap;
@@ -223,7 +224,7 @@ header.intro {
     align-items: flex-start;
 }
 
-header p {
+div.intro p {
     margin: 15px auto;
 }
 
@@ -475,6 +476,18 @@ header p {
     padding: 20px;
     max-width: 500px;
     margin: auto;
+}
+
+.title-overlay p {
+    margin: 20px auto;
+}
+
+.title-overlay p:first-child {
+    margin-top: 0;
+}
+
+.title-overlay p:last-child {
+    margin-bottom: 0;
 }
 
 .biography,
@@ -823,7 +836,7 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
         border-color: transparent;
     }
 
-    header.intro {
+    div.intro {
         font-size: 18px;
         justify-content: space-between;
     }
@@ -1018,7 +1031,8 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
         flex-direction: column;
         justify-content: flex-start;
         padding: 50px 10px 10px;
-        background-image: linear-gradient(0deg, #e6e6e6, #f2f2f2);
+        background-color: #fff;
+        /* background-image: linear-gradient(0deg, #e6e6e6, #f2f2f2); */
         box-shadow: 2px 0 2px -1px #cccccc;
         /* box-shadow: 0 1px 2px 0 #dcdcdc; */
     }
@@ -1047,7 +1061,7 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
         font-size: 22px;
     }
 
-    header,
+    div.intro,
     section {
         padding: 50px 100px;
     }
