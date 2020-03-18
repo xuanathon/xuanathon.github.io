@@ -416,6 +416,10 @@ article.resume {
     grid-column: 1/-1;
 }
 
+.resume-projects {
+    margin-top: 60px;
+}
+
 article.resume section {
     width: 100%;
     padding: 20px;
@@ -834,7 +838,7 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
     }
 
     article.resume {
-        margin: 0 100px 50px;
+        margin: 0 150px 50px;
     }
 
     .resume-education,
