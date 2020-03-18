@@ -16,9 +16,9 @@ TEXT
 
 EXTRAS
 #6ecbbd;
-#786fdc;
-#4a3ed0; link
-#666699; hover
+#786fdc; icon hover on dark bgs
+#666699; link
+#4a3ed0; hover
 
 *************/
 
@@ -58,13 +58,12 @@ a:visited {
 a.text-link,
 a.text-link:visited {
     font-weight: 600;
-    /* color: #786fdc; */
-    color: #655bd7;
+    color: #666699;
 }
 
 a.text-link:hover,
 a.text-link:visited:hover {
-    color: #666699;
+    color: #4a3ed0;
     text-decoration: underline;
 }
 
@@ -96,7 +95,7 @@ body {
 }
 
 #skip-to-main a {
-    background: #4a3ed0;
+    background: #666699;
     color: #fff;
     position: absolute;
     top: -100px;
@@ -513,7 +512,7 @@ form .submit,
     text-transform: uppercase;
     padding: 5px;
     color: #fff;
-    background-color: #4a3ed0;
+    background-color: #666699;
     cursor: pointer;
     -webkit-transition: background-color 250ms ease-out;
     transition: background-color 250ms ease-out;
@@ -531,7 +530,7 @@ form .submit:focus,
 #download-resume:hover,
 #download-resume:focus {
     text-decoration: underline;
-    background-color: #666699;
+    background-color: #4a3ed0;
 }
 
 
