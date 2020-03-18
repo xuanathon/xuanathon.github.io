@@ -446,21 +446,21 @@ header p {
 }
 
 .about-header {
-    background-image: linear-gradient(180deg, rgba(20, 20, 20, .5), rgba(10, 10, 10, .5)), url("../img/header_thingker.jpg");
-    background-color: #666;
+    background-image: linear-gradient(-180deg, rgba(120, 111, 220, .25), rgba(255, 255, 255, .85)), url("../img/header_about.jpg");
+    background-position: bottom right;
+    background-color: #f2f2f2;
     background-attachment: fixed;
-    background-position: right bottom;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 200px;
 }
 
 .about-header p {
-    color: #fff;
+    color: #1a1a1a;
 }
 
-.about-me {
-    padding-top: 10px;
+.title-overlay {
+    font-size: 1.25em;
 }
 
 .biography,
@@ -875,6 +875,11 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
 
     .project:nth-child(2n+1) .project-img {
         order: 2;
+    }
+
+    .about-header {
+        background-position: bottom right;
+        min-height: 250px;
     }
 
     .biography,
