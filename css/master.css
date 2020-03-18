@@ -219,17 +219,26 @@ header p {
     margin: 15px auto;
 }
 
+.intro-container {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    padding: 20px 0;
+    border: 4px solid #595959;
+    border-radius: 10px;
+}
+
 .intro-text {
     /* intro text animation effects obtained from:
     https://codepen.io/yoannhel/pen/sJpDj */
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    height: 160px;
     width: 100%;
+    height: 160px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
     overflow:hidden;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 40px;
 }
 
@@ -360,10 +369,6 @@ header p {
     background-color: transparent;
     transform: rotateY(180deg);
 }
-
-
-
-
 
 
 .quote {
