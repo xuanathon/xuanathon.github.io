@@ -293,7 +293,8 @@ header p {
     padding-top: 10px;
 }
 
-.biography {
+.biography,
+.contact-blurb {
     margin: 20px auto;
 }
 
@@ -680,7 +681,8 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
         order: 2;
     }
 
-    .biography {
+    .biography,
+    .contact-blurb {
         margin-top: 40px;
     }
 
@@ -859,7 +861,6 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
         display: inline-block;
         width: 50%;
         vertical-align: top;
-        margin-top: 0;
     }
 
     footer {
