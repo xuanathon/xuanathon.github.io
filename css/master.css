@@ -16,6 +16,7 @@ TEXT
 
 EXTRAS
 #6ecbbd;
+#786fdc;
 #4a3ed0; link
 #666699; hover
 
@@ -291,6 +292,10 @@ header p {
 
 .about-me {
     padding-top: 10px;
+}
+
+.biography {
+    margin: 20px auto;
 }
 
 .biography p:not(:first-child),
@@ -576,8 +581,8 @@ footer {
 .social-container .icon:hover,
 .social-container .icon:focus {
     font-size: 1.8em;
-    background-color: #4a3ed0;
-    border-color: #4a3ed0;
+    background-color: #786fdc;
+    border-color: #786fdc;
 }
 
 .footer-container p {
@@ -590,11 +595,13 @@ footer {
 /*************
 
 MEDIA QUERIES
+breakpoint values obtained from:
+https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
 
 *************/
 
 /* tablet */
-@media all and (min-width: 800px) {
+@media all and (min-width: 768px) {
     .toggle-menu {
         display: none;
     }
@@ -668,6 +675,10 @@ MEDIA QUERIES
 
     .project:nth-child(2n+1) .project-img {
         order: 2;
+    }
+
+    .biography {
+        margin-top: 40px;
     }
 
     .grid-gallery .grid-caption {
@@ -815,6 +826,7 @@ MEDIA QUERIES
         width: 50%;
         vertical-align: top;
         padding: 0;
+        margin-top: 40px;
     }
 
     .grid-gallery .grid-caption {
