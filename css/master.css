@@ -391,23 +391,6 @@ header p {
     transform: rotateY(-180deg);
 }
 
-
-.quote {
-    background-image: linear-gradient(180deg, rgba(20, 20, 20, .5), rgba(10, 10, 10, .5)), url("../img/placeholders/placeholder01.jpeg");
-    background-color: #666;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 150px;
-    padding: 30px 45px;
-}
-
-.quote p {
-    color: #fff;
-    line-height: 1.5;
-}
-
 .heading {
     font-size: 30px;
     color: #737373;
@@ -460,6 +443,20 @@ header p {
 
 .project-summary p:last-of-type {
     margin-bottom: 0;
+}
+
+.about-header {
+    background-image: linear-gradient(180deg, rgba(20, 20, 20, .5), rgba(10, 10, 10, .5)), url("../img/header_thingker.jpg");
+    background-color: #666;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+}
+
+.about-header p {
+    color: #fff;
 }
 
 .about-me {
