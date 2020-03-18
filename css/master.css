@@ -725,10 +725,16 @@ MEDIA QUERIES
         font-size: 13px;
     }
 
+    .contact-page {
+        padding-left: calc(15% + 40px);
+        padding-right: 40px;
+    }
+
     form {
         display: inline-block;
         width: 50%;
         vertical-align: top;
+        margin-top: 0;
     }
 
     footer {
