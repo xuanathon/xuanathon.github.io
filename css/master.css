@@ -522,6 +522,7 @@ form .submit:hover,
 form .submit:focus,
 #download-resume:hover,
 #download-resume:focus {
+    text-decoration: underline;
     background-color: #666699;
 }
 
@@ -565,12 +566,13 @@ footer {
     text-decoration: none;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, .65);
-    -webkit-transition: background-color 250ms ease-out;
-    transition: background-color 250ms ease-out;
+    -webkit-transition: all 250ms ease-out;
+    transition: ball 250ms ease-out;
 }
 
 .social-container .icon:hover,
 .social-container .icon:focus {
+    font-size: 1.8em;
     background-color: #8c84e1;
     border-color: #8c84e1;
 }
