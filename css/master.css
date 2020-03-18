@@ -96,10 +96,11 @@ body {
 }
 
 #skip-to-main a {
-    background: #fff;
+    background: #4a3ed0;
+    color: #fff;
     position: absolute;
-    top: -50px;
-    padding: 5px;
+    top: -100px;
+    padding: 20px;
     -webkit-transition: top 250ms ease-out;
     transition: top 250ms ease-out;
     z-index: 999;
