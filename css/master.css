@@ -594,7 +594,8 @@ article.resume {
     margin-top: 60px;
 }
 
-article.resume section {
+article.resume section,
+.resume-download {
     width: 100%;
     padding: 20px;
 }
