@@ -481,7 +481,8 @@ form textarea:active {
     border-color: #8c84e1;
 }
 
-form .submit {
+form .submit,
+#download-resume {
     width: 150px;
     height: 35px;
     font-family: 'Oswald', sans-serif;
@@ -495,8 +496,17 @@ form .submit {
     transition: background-color 250ms ease-out;
 }
 
+#download-resume {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
 form .submit:hover,
-form .submit:focus {
+form .submit:focus,
+#download-resume:hover,
+#download-resume:focus {
     background-color: #666699;
 }
 
@@ -783,7 +793,8 @@ MEDIA QUERIES
     a,
     a:visited,
     #skip-to-main a,
-    form .submit {
+    form .submit,
+    #download-resume {
         -webkit-transition: none;
         transition: none;
     }
