@@ -251,21 +251,19 @@ header p {
 
 .intro-text-list {
     margin-top: 0;
-    /* padding-left: 110px; */
-    text-align: left;
+    text-align: center;
     list-style: none;
-
-    -webkit-animation-name: change;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-name: text-flip;
+    -webkit-animation-duration: 18s;
     -webkit-animation-iteration-count: infinite;
-    animation-name: change;
-    animation-duration: 10s;
+    animation-name: text-flip;
+    animation-duration: 18s;
     animation-iteration-count: infinite;
 }
 
 .intro-text-item {
-    line-height:40px;
-        margin:0;
+    line-height: 40px;
+    margin:0;
 }
 
 @-webkit-keyframes opacity {
@@ -273,7 +271,7 @@ header p {
   50% {opacity:1;}
 }
 
-@-webkit-keyframes change {
+@-webkit-keyframes text-flip {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
   33.32%,45.98% {transform:translate3d(0,-50%,0);}
@@ -287,7 +285,7 @@ header p {
   50% {opacity:1;}
 }
 
-@-o-keyframes change {
+@-o-keyframes text-flip {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
   33.32%,45.98% {transform:translate3d(0,-50%,0);}
@@ -301,7 +299,7 @@ header p {
   50% {opacity:1;}
 }
 
-@-moz-keyframes change {
+@-moz-keyframes text-flip {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
   33.32%,45.98% {transform:translate3d(0,-50%,0);}
@@ -315,7 +313,7 @@ header p {
   50% {opacity:1;}
 }
 
-@keyframes change {
+@keyframes text-flip {
   0%, 12.66%, 100% {transform:translate3d(0,0,0);}
   16.66%, 29.32% {transform:translate3d(0,-25%,0);}
   33.32%,45.98% {transform:translate3d(0,-50%,0);}
@@ -1038,7 +1036,8 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
     form textarea,
     form .submit,
     #download-resume,
-    .social-container .icon {
+    .social-container .icon,
+    .intro-text-list {
         -webkit-transition: none;
         transition: none;
     }
