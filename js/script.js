@@ -10,15 +10,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	// written with help from:
 	// https://jsfiddle.net/cvmw3L1o/1/
-	document.addEventListener("scroll", (e) => {
-		var scrolledDistance = document.scrollingElement.scrollTop;
+	if (window.location.pathname == '/index.html') {
+		document.addEventListener("scroll", (e) => {
+			var scrolledDistance = document.scrollingElement.scrollTop;
 
-		if (scrolledDistance > 300) {
-			arrowContainer.classList.add('hide');
-		} else {
-			arrowContainer.classList.remove('hide');
-		}
-	});
+			if (scrolledDistance > 300) {
+				arrowContainer.classList.add('hide');
+			} else {
+				arrowContainer.classList.remove('hide');
+			}
+		});
+	}
 
 	document.getElementById('current-year').innerText = new Date().getFullYear();
 });
