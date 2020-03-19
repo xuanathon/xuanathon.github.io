@@ -960,7 +960,6 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
 
     .about-header {
         background-position: bottom right;
-        min-height: 250px;
     }
 
     .biography,
