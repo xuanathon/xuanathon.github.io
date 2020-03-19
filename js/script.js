@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	document.addEventListener("scroll", (e) => {
 		var scrolledDistance = document.scrollingElement.scrollTop;
 
-		if (scrolledDistance > 250) {
+		if (scrolledDistance > 300) {
 			arrowContainer.classList.add('hide');
 		} else {
 			arrowContainer.classList.remove('hide');
