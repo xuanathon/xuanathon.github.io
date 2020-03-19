@@ -1185,9 +1185,16 @@ https://dev.to/rstacruz/what-media-query-breakpoints-should-i-use-292c
     form .submit,
     #download-resume,
     .social-container .icon,
-    .intro-greeting-list,
+    .down-arrow-container,
     .bounce {
         -webkit-transition: none;
         transition: none;
+    }
+
+    .intro-greeting-list,
+    .bounce {
+        -moz-animation: none;
+        -webkit-animation: none;
+        animation: none;
     }
 }
